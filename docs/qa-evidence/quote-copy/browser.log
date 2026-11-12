@@ -1,19 +1,19 @@
 npm notice run paseo@0.16.0-beta.2 npx
-npm notice run 'playwright' test --config /tmp/paseo-quote-playwright.config.ts --project=browser e2e/browser/plan-card-markdown.spec.ts -g copies quote bodies --output=/Users/pedrovieira/.paseo/worktrees/08s4002r/obscene-bird/artifacts/quote-copy-prepr/final-browser-run
-(node:91878) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+npm notice run 'playwright' test --config /tmp/paseo-quote-playwright.config.ts --project=browser e2e/browser/plan-card-markdown.spec.ts -g copies quote bodies --output=/tmp/paseo-quote-alignment/after-run
+(node:99787) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 [metro] Skipping web setup: EXPO_NO_WEB_SETUP is enabled.
 [metro] Using src/app as the root directory for Expo Router.
-[metro] Waiting on http://localhost:63137
+[metro] Waiting on http://localhost:49518
 [metro] Logs for your project will appear below.
-[metro] Web Bundled 1058ms packages/app/index.ts (5886 modules)
-[e2e] Metro warmed on port 63137
+[metro] Web Bundled 1051ms packages/app/index.ts (5886 modules)
+[e2e] Metro warmed on port 49518
 
 Running 1 test using 1 worker
 
-(node:92182) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(node:233) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-[e2e] Worker 0 daemon started on port 63154, home: /var/folders/qq/svjd1ryx5l97l8llrc6dm__80000gn/T/reasonix-session-tmp-608613232/paseo-e2e-worker-0-C1hfx1
+[e2e] Worker 0 daemon started on port 49538, home: /var/folders/qq/svjd1ryx5l97l8llrc6dm__80000gn/T/reasonix-session-tmp-3274669458/paseo-e2e-worker-0-gaDftO
 [metro] Web Bundled 56ms packages/app/index.ts (1 module)
 [metro] Web  INFO  %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [metro] Web  LOG  Running application "main" with appParams:
@@ -44,9 +44,9 @@ Running 1 test using 1 worker
 [metro] Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
 [metro] Web  WARN  props.pointerEvents is deprecated. Use style.pointerEvents
 [metro] Web  WARN  Animated: `useNativeDriver` is not supported because the native animated module is missing. Falling back to JS-based animation. To resolve this, add `RCTAnimation` module to this app, or remove `useNativeDriver`. Make sure to run `bundle exec pod install` first. Read more about autolinking: https://github.com/react-native-community/cli/blob/master/docs/autolinking.md
-[metro] Web Bundled 17ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
-  ✓  1 [browser] › e2e/browser/plan-card-markdown.spec.ts:337:5 › copies quote bodies with nested markdown and no surrounding chat text (5.5s)
+[metro] Web Bundled 18ms packages/app/src/attachments/web/indexeddb-attachment-store.ts (1 module)
+  ✓  1 [browser] › e2e/browser/plan-card-markdown.spec.ts:337:5 › copies quote bodies with nested markdown and no surrounding chat text (5.9s)
 [e2e] Worker 0 daemon stopped
 [e2e] Metro stopped
 
-  1 passed (14.9s)
+  1 passed (19.3s)

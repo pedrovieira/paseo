@@ -10,9 +10,19 @@ The checks were agent-driven against the running app, with its production Markdo
 - [Browser screenshot](browser-copied.png) and [compact screenshot](browser-compact.png).
 - [Actual Electron screenshot](electron-copied.png) and [clipboard/window results](electron-result.json): outer quote, nested quote and literal code copied correctly. The real Electron 44.2.0 window used production main/preload and remained unfocused.
 
-The existing `plan-card-markdown.spec.ts` journey passed: **1 passed (14.9s)**. The real Electron probe passed: **1 passed (16.2s)**. The probe was temporary; it did not add another test suite to the repository. Its recording was not Electron-window evidence and is not included.
+The existing `plan-card-markdown.spec.ts` journey passed after the compact alignment correction: **1 passed (19.3s)** (browser test body 5.9s). The real Electron probe passed: **1 passed (16.2s)**. The probe was temporary; it did not add another test suite to the repository. Its recording was not Electron-window evidence and is not included.
 
 The browser journey failed before the Mermaid fix because copying the rendered diagram omitted its source fence. After the fix, the same journey verified that diagram and source views copy identical Markdown and HTML. The copy payload excludes the surrounding paragraphs and Copy/View source/Fullscreen labels.
+
+## Compact alignment regression
+
+The earlier shared copy-control extraction moved glyphs inward and down on compact layouts. The real browser regression measured a 12px change between wide and compact insets and failed before the correction. After the correction, the outer quote, nested quote and short code fence each keep 12px top/right glyph insets at both widths, with 44×44px compact touch targets. Block content and spacing are unchanged.
+
+- [Before screenshot](alignment-before.png) and [before metrics](alignment-before.json).
+- [After screenshot](browser-compact.png) and [after metrics](alignment-after.json).
+- [Raw regression failure](alignment-before.log) and [passing full quote-copy journey](browser.log).
+
+The Electron capture/results predate this web-control alignment correction. Native implementations were not changed by the correction.
 
 ## Commands and raw output
 

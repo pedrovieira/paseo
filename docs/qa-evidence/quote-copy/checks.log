@@ -1,13 +1,13 @@
 $ npm run format
 npm notice run paseo@0.16.0-beta.2 format
 npm notice run oxfmt .
-Finished in 1148ms on 5943 files using 16 threads.
+Finished in 1100ms on 5943 files using 16 threads.
 
 $ npm run lint
 npm notice run paseo@0.16.0-beta.2 lint
 npm notice run oxlint
 Found 0 warnings and 0 errors.
-Finished in 1.0s on 5456 files with 177 rules using 16 threads.
+Finished in 1.2s on 5456 files with 177 rules using 16 threads.
 
 $ npm run typecheck
 npm notice run paseo@0.16.0-beta.2 typecheck
@@ -22,7 +22,7 @@ npm notice run tsgo --noEmit && npm run typecheck:examples
 npm notice run @getpaseo/plugin@0.16.0-beta.2 typecheck:examples
 npm notice run npm --prefix ../../plugin-examples/markdown-panel install --ignore-scripts --no-audit --no-fund && tsgo -p tsconfig.examples.json --noEmit
 
-up to date in 115ms
+up to date in 113ms
 npm notice run @getpaseo/protocol@0.16.0-beta.2 pretypecheck
 npm notice run npm run generate:validators
 npm notice run @getpaseo/protocol@0.16.0-beta.2 generate:validators
@@ -45,5 +45,4 @@ npm notice run oxfmt --check .
 Checking formatting...
 
 All matched files use the correct format.
-Finished in 1158ms on 5943 files using 16 threads.
-
+Finished in 1154ms on 5943 files using 16 threads.

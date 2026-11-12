@@ -1,0 +1,54 @@
+{
+  "pointer": [
+    {
+      "name": "outer",
+      "topInset": 11,
+      "rightInset": 11,
+      "insideBlock": true,
+      "buttonWidth": 20,
+      "buttonHeight": 20
+    },
+    {
+      "name": "nested",
+      "topInset": 11,
+      "rightInset": 11,
+      "insideBlock": true,
+      "buttonWidth": 20,
+      "buttonHeight": 20
+    },
+    {
+      "name": "code",
+      "topInset": 11,
+      "rightInset": 11,
+      "insideBlock": true,
+      "buttonWidth": 20,
+      "buttonHeight": 20
+    }
+  ],
+  "compact": [
+    {
+      "name": "outer",
+      "topInset": 23,
+      "rightInset": 23,
+      "insideBlock": true,
+      "buttonWidth": 44,
+      "buttonHeight": 44
+    },
+    {
+      "name": "nested",
+      "topInset": 23,
+      "rightInset": 23,
+      "insideBlock": true,
+      "buttonWidth": 44,
+      "buttonHeight": 44
+    },
+    {
+      "name": "code",
+      "topInset": 23,
+      "rightInset": 23,
+      "insideBlock": true,
+      "buttonWidth": 44,
+      "buttonHeight": 44
+    }
+  ]
+}
